@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Pauzzz</title>
 </head>
-<body>
-    <p id="clock"></p>
-    <form>
-        <input type="time" name="input-time" id="input-time" placeholder="Ange mötets starttid">
+
+<body id="body">
+    <section class="clocksection">
+        <p id="clock"></p>
+    </section>
+
+    <section class="countdownsection" id="countdownsection">
+        <p>Mötet startar klockan <span id="starttime"></span>🎈</p>
+        <br>
+        <div class="minutes">
+            <p id="countdown"></p>
+            <p class="minutestext">&nbsp;min</p>
+        </div>
+    </section>
+
+    <form id="inputform">
+        <label for="input-time">När startar mötet?</label>
+        <input type="time" name="input-time" id="input-time" required>
         <input type="submit" value="Starta nedräkning" id="submit">
     </form>
-    <p id="countdown"></p>
     <script src="app.js"></script>
 </body>
+
 </html>
