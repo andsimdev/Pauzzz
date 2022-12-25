@@ -71,7 +71,7 @@ form input {
 }
 
 form label {
-    color: var(--dark);
+    color: var(--light);
     font-size: 3rem;
     position: absolute;
     transform: translate(0, -100px);
@@ -87,7 +87,7 @@ form input:hover {
 
 #submit {
     background-color: var(--dark);
-    color: var(--lightblue);
+    color: var(--light);
     font-weight: 500;
     margin-top: 25px;
 }
@@ -109,12 +109,12 @@ form input:hover {
 
 #countdown, .minutestext {
     font-weight: 800;
-    color: var(--dark);
+    color: var(--light);
     font-size: 6rem;
 }
 
 .soon {
     font-weight: 800;
-    color: var(--dark);
+    color: var(--light);
     font-size: 4rem;
 }
