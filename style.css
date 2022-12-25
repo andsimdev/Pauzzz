@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
-    --dark: #081635;
-    --light: #ffdbd6;
-    --lightblue: #e9f0ff;
-    --accent: #ff806d;
+    --dark: #222222;
+    --light: #ddcad4;
+    --lightblue: #e6e6e6;
+    --accent: #662246;
 }
 
 * {
