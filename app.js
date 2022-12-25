@@ -7,6 +7,7 @@ const submitEl = document.getElementById("submit");
 const countdownsectionEl = document.getElementById("countdownsection");
 const countdownEl = document.getElementById("countdown");
 const starttimespanEl = document.getElementById("starttime");
+const soundEl = document.getElementById("sound");
 
 // GLOBALA VARIABLER
 let startTimeMilli = 0;
@@ -26,6 +27,7 @@ function showTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
+    h = addZero(h);
     m = addZero(m);
     s = addZero(s);
     clockEl.innerHTML = h + ":" + m + " " + "<span class='seconds'>" + s + "</span>";
@@ -121,7 +123,12 @@ function timeLeft() {
 
     // På mötestiden
     if (minutesToStart <= 0) {
-        countdownsectionEl.innerHTML = "<p class='soon'>Mötet startar strax 🎉</p>";
+        countdownsectionEl.innerHTML = "<p class='soon'>Lektionen startar strax 🎉</p>";
+    }
+
+    if(minutesToStart <= 1) {
+        soundEl.volume = 0.25;
+        soundEl.play();
     }
 
     if (document.fullscreenElement) {
