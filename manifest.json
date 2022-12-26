@@ -1,0 +1,15 @@
+{
+    "short_name": "Pauzzz",
+    "name": "Pauzzz Timer",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#081635",
+    "display": "standalone",
+    "theme_color": "081635",
+    "description": "Pauzzz countdown timer for meetings"
+}
