@@ -126,10 +126,10 @@ function timeLeft() {
         countdownsectionEl.innerHTML = "<p class='soon'>Lektionen startar strax 🎉</p>";
     }
 
-    if(minutesToStart <= 1) {
-        soundEl.volume = 0.25;
-        soundEl.play();
-    }
+    // if(minutesToStart <= 1) {
+    //     soundEl.volume = 0.25;
+    //     soundEl.play();
+    // }
 
     if (document.fullscreenElement) {
         bodyEl.style.cursor = "none";
