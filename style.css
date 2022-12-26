@@ -13,7 +13,7 @@
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     transition: .25s;
-    zoom: 0.9;
+    transform: scale(.9);
 }
 
 body {
