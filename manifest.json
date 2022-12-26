@@ -3,7 +3,7 @@
     "name": "Pauzzz Timer",
     "icons": [
         {
-            "src": "icon.png",
+            "src": "favicon.png",
             "type": "image/png",
             "sizes": "512x512"
         }
