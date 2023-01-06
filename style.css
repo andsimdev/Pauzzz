@@ -138,8 +138,9 @@ form input:hover {
 
     .seconds {
         font-size: 1.5rem;
-        position: static !important;
-        margin-left: 10px;
+        position: relative !important;
+
+        /* margin-left: 10px; */
     }
 
     form {
