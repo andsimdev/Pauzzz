@@ -150,10 +150,11 @@ form input:hover {
         align-items: center;
         z-index: 99999;
         width: 200px;
-        background-color: yellow;
+        background-color: blue;
     }
 
     form input {
+        min-width: none;
         width: 100%;
         padding: 5% 10%;
         border-radius: 35px;
