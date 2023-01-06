@@ -140,7 +140,7 @@ form input:hover {
         font-size: 1.5rem;
         position: absolute !important;
         right: -40px;
-        bottom: 1px !important;
+        bottom: 2px !important;
     }
 
     form {
