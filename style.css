@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-:root{
+:root {
     --dark: #081635;
     --light: #ffdbd6;
     --lightblue: #e9f0ff;
@@ -107,7 +107,8 @@ form input:hover {
     gap: 10px;
 }
 
-#countdown, .minutestext {
+#countdown,
+.minutestext {
     font-weight: 800;
     color: var(--dark);
     font-size: 6rem;
@@ -117,4 +118,84 @@ form input:hover {
     font-weight: 800;
     color: var(--dark);
     font-size: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .clocksection {
+        display: flex;
+        justify-content: center;
+        right: 75px;
+        top: 25px;
+        width: fit-content;
+    }
+
+    #clock {
+        position: static !important;
+        color: var(--light);
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .seconds {
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: 15px;
+        bottom: 4px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 99999;
+    }
+
+    form input {
+        width: fit-content;
+        min-width: 200px;
+        padding: 5% 10%;
+        border-radius: 35px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    form label {
+        font-size: 2rem;
+    }
+
+    .countdownsection {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--light);
+        font-size: 3rem;
+        opacity: 0;
+    }
+
+    .countdowntext {
+        font-size: 2rem;
+        text-align: center;
+        max-width: 75%;
+    }
+
+    .minutes {
+        display: flex;
+        gap: 5px;
+    }
+
+    #countdown,
+    .minutestext {
+        font-weight: 800;
+        color: var(--dark);
+        font-size: 3rem;
+        text-align: center;
+        /* max-width: 75%; */
+    }
+
+    .soon {
+        font-size: 2rem;
+        max-width: 75%;
+        text-align: center;
+    }
 }
