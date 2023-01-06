@@ -153,7 +153,6 @@ form input:hover {
     }
 
     form input {
-        width: fit-content;
         width: 100%;
         padding: 5% 10%;
         border-radius: 35px;
