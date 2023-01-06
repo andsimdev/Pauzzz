@@ -154,9 +154,9 @@ form input:hover {
     }
 
     form input {
-        min-width: none;
-        width: 100%;
-        padding: 5% 10%;
+        min-width: 200px !important;
+        width: 100% !important;
+        padding: 10% 0;
         border-radius: 35px;
         border: none;
         font-size: 1rem;
