@@ -130,7 +130,7 @@ form input:hover {
     }
 
     #clock {
-        position: static !important;
+        position: relative !important;
         color: var(--light);
         font-size: 2rem;
         font-weight: 600;
@@ -138,9 +138,8 @@ form input:hover {
 
     .seconds {
         font-size: 1.5rem;
-        position: relative !important;
-
-        /* margin-left: 10px; */
+        position: absolute !important;
+        margin-left: 5px;
     }
 
     form {
