@@ -150,7 +150,6 @@ form input:hover {
         align-items: center;
         z-index: 99999;
         width: 200px;
-        background-color: blue;
     }
 
     form input {
