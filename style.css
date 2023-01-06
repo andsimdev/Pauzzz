@@ -166,6 +166,12 @@ form input:hover {
         font-size: 2rem;
     }
 
+    #input-time {
+        min-width: 200px !important;
+        width: 100% !important;
+        padding: 15% 0px !important;
+    }
+
     .countdownsection {
         position: absolute;
         display: flex;
