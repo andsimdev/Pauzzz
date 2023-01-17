@@ -88,16 +88,15 @@ function startCountdown() {
     // Kör klockfunktionen varje sekund
     setInterval(showTime, 1000);
 
+    // Dölj formulär
     inputformEl.style.opacity = 0;
     inputformEl.style.zIndex = -1;
 
+    // Visa nedräkningssektion
     countdownsectionEl.style.opacity = 1;
 
     // Starta helskärm
     document.documentElement.requestFullscreen();
-
-    // Dölj 
-    // bodyEl.style.cursor = "none";
 }
 
 // Återstående tid till mötesstart
