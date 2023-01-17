@@ -1,4 +1,4 @@
-// HTML-ELEMENT
+// ----- HTML-ELEMENT -----
 const bodyEl = document.getElementById("body");
 const clockEl = document.getElementById("clock");
 const inputformEl = document.getElementById("inputform");
@@ -9,16 +9,15 @@ const countdownEl = document.getElementById("countdown");
 const starttimespanEl = document.getElementById("starttime");
 const soundEl = document.getElementById("sound");
 
-// GLOBALA VARIABLER
+
+// ----- GLOBALA VARIABLER -----
 let startTimeMilli = 0;
 
-// EVENTHANTERARE
-submitEl.addEventListener("click", startCountdown);
 
-// FUNKTIONER
+// ----- FUNKTIONER -----
 // Prevent default on sumbit
 document.getElementById("submit").addEventListener("click", function (event) {
-    event.preventDefault()
+    event.preventDefault();
 });
 
 // Klocka
@@ -94,12 +93,14 @@ function startCountdown() {
 
     countdownsectionEl.style.opacity = 1;
 
+    // Starta helskärm
     document.documentElement.requestFullscreen();
 
-    bodyEl.style.cursor = "none";
+    // Dölj 
+    // bodyEl.style.cursor = "none";
 }
 
-// ÅTERSTÅENDE TID TILL MÖTESSTART
+// Återstående tid till mötesstart
 function timeLeft() {
     // Nuvarande tid
     const now = new Date();
@@ -126,11 +127,13 @@ function timeLeft() {
         countdownsectionEl.innerHTML = "<p class='soon'>Lektionen startar strax 🎉</p>";
     }
 
+    // Vid en minut kvar till mötet
     if(minutesToStart <= 1) {
         soundEl.volume = 0.15;
         soundEl.play();
     }
 
+    // Dölj muspekaren vid helskärm
     if (document.fullscreenElement) {
         bodyEl.style.cursor = "none";
     } else {
@@ -138,8 +141,13 @@ function timeLeft() {
     }
 };
 
+// ----- EVENTHANTERARE -----
+submitEl.addEventListener("click", startCountdown);
+
+
+// ----- FUNKTIONSANROP -----
+// Kör funktionen showTime för att visa tiden
 showTime();
 
 // Kör klockfunktionen varje sekund
 setInterval(showTime, 1000);
-
