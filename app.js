@@ -94,9 +94,6 @@ function startCountdown() {
 
     // Visa nedräkningssektion
     countdownsectionEl.style.opacity = 1;
-
-    // Starta helskärm
-    document.documentElement.requestFullscreen();
 }
 
 // Återstående tid till mötesstart
@@ -150,3 +147,9 @@ showTime();
 
 // Kör klockfunktionen varje sekund
 setInterval(showTime, 1000);
+
+// Helskärm vid dubbelklick
+bodyEl.addEventListener("dblclick", () => {
+        // Starta helskärm
+    document.documentElement.requestFullscreen();
+})
