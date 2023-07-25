@@ -8,6 +8,7 @@ const countdownsectionEl = document.getElementById("countdownsection");
 const countdownEl = document.getElementById("countdown");
 const starttimespanEl = document.getElementById("starttime");
 const soundEl = document.getElementById("sound");
+const introsoundEl = document.getElementById("introsound");
 
 
 // ----- GLOBALA VARIABLER -----
@@ -94,6 +95,9 @@ function startCountdown() {
 
     // Visa nedräkningssektion
     countdownsectionEl.style.opacity = 1;
+
+    introsoundEl.volume = 0.15;
+    introsoundEl.play();
 }
 
 // Återstående tid till mötesstart
@@ -124,10 +128,10 @@ function timeLeft() {
     }
 
     // Vid en minut kvar till mötet
-    if(minutesToStart <= 1) {
-        soundEl.volume = 0.15;
-        soundEl.play();
-    }
+    // if(minutesToStart <= 1) {
+    //     soundEl.volume = 0.15;
+    //     soundEl.play();
+    // }
 
     // Dölj muspekaren vid helskärm
     if (document.fullscreenElement) {

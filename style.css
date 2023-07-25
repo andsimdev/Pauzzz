@@ -31,6 +31,12 @@ body {
     background-size: cover;
 }
 
+.logo {
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+}
+
 .clocksection {
     display: flex;
     justify-content: center;
