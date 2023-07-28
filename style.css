@@ -76,6 +76,15 @@ form input {
     font-size: 1.5rem;
 }
 
+input[type=time]::-webkit-datetime-edit-hour-field:focus,
+input[type=time]::-webkit-datetime-edit-minute-field:focus,
+input[type=time]::-webkit-datetime-edit-second-field:focus,
+input[type=time]::-webkit-datetime-edit-ampm-field:focus {
+    background: #66224625;
+    border-radius: 5px;
+    color: black;
+}
+
 form label {
     color: var(--light);
     font-size: 3rem;
