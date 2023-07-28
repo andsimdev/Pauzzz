@@ -157,3 +157,8 @@ bodyEl.addEventListener("dblclick", () => {
         // Starta helskärm
     document.documentElement.requestFullscreen();
 })
+
+window.onload = function() {
+    // Sätt fokus på input-fältet
+    inputtimeEl.focus();
+};

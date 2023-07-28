@@ -126,7 +126,7 @@ form input:hover {
     font-size: 4rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .clocksection {
         display: flex;
         justify-content: center;
@@ -160,7 +160,7 @@ form input:hover {
     form input {
         min-width: 200px !important;
         width: 200px !important;
-        padding: 15% 0px !important;
+        padding: 10px 0px !important;
         border-radius: 35px;
         border: none;
         font-size: 1rem;
@@ -173,7 +173,7 @@ form input:hover {
     #input-time {
         min-width: 200px !important;
         width: 200px !important;
-        padding: 15% 0px !important;
+        padding: 10px 25px !important;
     }
 
     .countdownsection {
