@@ -154,11 +154,19 @@ setInterval(showTime, 1000);
 
 // Helskärm vid dubbelklick
 bodyEl.addEventListener("dblclick", () => {
-        // Starta helskärm
+    // Starta helskärm
     document.documentElement.requestFullscreen();
 })
 
-window.onload = function() {
+window.onload = function () {
     // Sätt fokus på input-fältet
     inputtimeEl.focus();
 };
+
+// Kod för att vidarebefordra alla klick på q till huvuddokumentet
+document.addEventListener("keydown", function (event) {
+    if (event.key === "q") {
+        // Skicka ett meddelande till överordnade fönstret (presentationen)
+        window.parent.postMessage("qKeyPressed", "*");
+    }
+});
