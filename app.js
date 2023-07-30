@@ -163,15 +163,7 @@ window.onload = function () {
     inputtimeEl.focus();
 };
 
-// Kod för att vidarebefordra alla klick på q till huvuddokumentet
-// document.addEventListener("keydown", function (event) {
-//     if (event.key === "q") {
-//         // Skicka ett meddelande till överordnade fönstret (presentationen)
-//         window.parent.postMessage("qKeyPressed", "*");
-//     }
-// });
-
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keyup", function(event) {
   if (event.key === "q") {
     // Gradvis sänk ljudvolymen
     const numSteps = 10;
