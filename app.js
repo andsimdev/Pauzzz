@@ -164,9 +164,36 @@ window.onload = function () {
 };
 
 // Kod för att vidarebefordra alla klick på q till huvuddokumentet
-document.addEventListener("keydown", function (event) {
-    if (event.key === "q") {
+// document.addEventListener("keydown", function (event) {
+//     if (event.key === "q") {
+//         // Skicka ett meddelande till överordnade fönstret (presentationen)
+//         window.parent.postMessage("qKeyPressed", "*");
+//     }
+// });
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "q") {
+    // Gradvis sänk ljudvolymen
+    const numSteps = 10;
+    const fadeOutDuration = 1000;
+
+    let currentStep = 0;
+    const initialVolume = introsoundEl.volume;
+
+    const fadeOutInterval = setInterval(() => {
+      currentStep++;
+      const targetVolume = initialVolume - (currentStep / numSteps) * initialVolume;
+      introsoundEl.volume = targetVolume;
+
+      if (currentStep >= numSteps) {
+        // När vi har nått det sista steget, stoppa intervallet och tysta ljudet helt
+        clearInterval(fadeOutInterval);
+        introsoundEl.pause();
+        introsoundEl.volume = initialVolume; // Återställ volymen till dess ursprungliga värde
+
         // Skicka ett meddelande till överordnade fönstret (presentationen)
         window.parent.postMessage("qKeyPressed", "*");
-    }
+      }
+    }, fadeOutDuration / numSteps);
+  }
 });
