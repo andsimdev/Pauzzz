@@ -95,9 +95,6 @@ function startCountdown() {
 
     // Visa nedräkningssektion
     countdownsectionEl.style.opacity = 1;
-
-    introsoundEl.volume = 0.15;
-    introsoundEl.play();
 }
 
 // Återstående tid till mötesstart
@@ -127,11 +124,11 @@ function timeLeft() {
         countdownsectionEl.innerHTML = "<p class='soon'>Lektionen startar strax 🎉</p>";
     }
 
-    // Vid en minut kvar till mötet
-    // if(minutesToStart <= 1) {
-    //     soundEl.volume = 0.15;
-    //     soundEl.play();
-    // }
+    //Vid en minut kvar till mötet
+    if(minutesToStart <= 1) {
+        introsoundEl.volume = 0.15;
+        introsoundEl.play();
+    }
 
     // Dölj muspekaren vid helskärm
     if (document.fullscreenElement) {
