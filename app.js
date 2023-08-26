@@ -125,10 +125,10 @@ function timeLeft() {
     }
 
     //Vid en minut kvar till mötet
-    if(minutesToStart <= 1) {
-        introsoundEl.volume = 0.15;
-        introsoundEl.play();
-    }
+    // if(minutesToStart <= 1) {
+    //     introsoundEl.volume = 0.15;
+    //     introsoundEl.play();
+    // }
 
     // Dölj muspekaren vid helskärm
     if (document.fullscreenElement) {
