@@ -1,13 +1,13 @@
 {
-    "name": "Pauzzz",
+    "name": "Pauz",
     "icons": [
         {
             "src": "favicon.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "240x240"
         }
     ],
-    "background_color": "#222222",
+    "background_color": "#0c0c0c",
     "display": "standalone",
-    "theme_color": "#222222"
+    "theme_color": "#0c0c0c"
 }
