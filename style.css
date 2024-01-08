@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-    --dark: #222222;
-    --light: #ddcad4;
-    --lightblue: #e6e6e6;
-    --accent: #662246;
+    --dark: #0c0c0c;
+    --light: #ffd9d9;
+    --lightblue: #ffa1a1;
+    --accent: #d60000;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #222222;
+    background-color: #0c0c0c;
     width: 100vw;
     height: 100vh;
     overflow: hidden;

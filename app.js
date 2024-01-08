@@ -121,7 +121,7 @@ function timeLeft() {
 
     // På mötestiden
     if (minutesToStart <= 0) {
-        countdownsectionEl.innerHTML = "<p class='soon'>Lektionen startar strax 🎉</p>";
+        countdownsectionEl.innerHTML = "<p class='soon'>The lecture will start soon 🎉</p>";
     }
 
     //Vid en minut kvar till mötet
